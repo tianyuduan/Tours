@@ -43,29 +43,27 @@ html {
   text-transform: uppercase;
   /* removes slight shakes, probaly dude to container */
   backface-visibility: hidden; }
-
-.heading-primary--head {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-timing-function: ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
-  text-align: center;
-  margin-bottom: 4em;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  /* animation-iteration-count: 3; */
-  animation-timing-function: ease-out; }
+  .heading-primary--head {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+    text-align: center;
+    margin-bottom: 4em;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -99,8 +97,7 @@ html {
   animation: moveUp .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -112,10 +109,15 @@ html {
 .btn--white {
   background-color: #fff;
   color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
@@ -132,10 +134,3 @@ html {
   left: 0;
   z-index: -1;
   transition: all .4s; }
-
-.btn-white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
