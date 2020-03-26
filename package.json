@@ -1,0 +1,22 @@
+{
+  "name": "tours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianyuduan/Tours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianyuduan/Tours/issues"
+  },
+  "homepage": "https://github.com/tianyuduan/Tours#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
