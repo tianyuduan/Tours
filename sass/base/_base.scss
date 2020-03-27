@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0; 
+    /* removes margin and padding to box model */
+    box-sizing: inherit;
+}
+
+
+body {
+    /* if no lato, use sans serif  */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777777;
+    padding: 3rem;
+    font-size: 1.5rem;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
